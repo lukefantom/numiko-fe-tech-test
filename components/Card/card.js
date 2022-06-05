@@ -1,7 +1,10 @@
 export default function Card({ title, info, stats, image }) {
   return (
-    <div className="card">
+    <div className="card fadeIn">
+      {/* Hero Image */}
       <div className="card__hero">{image && <img src={image} alt={title} />}</div>
+
+      {/* Primary Content */}
       <div className="card__content p-10 md:p-12 lg:p-16">
         {title && (
           <header className="card__header mb-4">
@@ -13,6 +16,7 @@ export default function Card({ title, info, stats, image }) {
             <p>{info}</p>
           </div>
         )}
+
         {stats && (
           <footer className="card__footer">
             {stats.map((item, index) => {
