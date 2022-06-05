@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: $primaryFont;
+  font-size: $bodyFontSize;
+  font-weight: $fontRegular;
+  color: $paragraph-main;
+  line-height: 1.6;
+
+  background-color: $bg-primary;
+}
+
+h1,
+h2,
+h3 {
+  color: $heading-main;
+}
+
+h4 {
+  font-size: 0.75rem;
+  font-family: $secondaryFont;
+  font-weight: $fontRegular;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+strong {
+  font-weight: $fontBold;
+  color: $accent-primary;
+}
+
+* {
+  box-sizing: border-box;
+}
